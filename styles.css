@@ -28,6 +28,11 @@ form {
     margin-bottom: 25px;
 }
 
+div {
+    margin: 10px;
+    margin-bottom: 25px;
+}
+
 input {
     font-size: 15px;
     color: white;
@@ -46,7 +51,7 @@ label {
     font-size: 17px;
 }
 
-.submit {
+#submit {
     color: white;
     font-size: 20px;
     height: 40px;
