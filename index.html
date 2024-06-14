@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
+    <title>Sign Up</title>
+</head>
+<body>
+    <h1>SIGNUP FORM</h1>
+    <div class="container">
+    <form>
+        <label>Guest Name &nbsp; &nbsp; :</label>
+        <input type="text" class="box" placeholder="Enter Name">
+    </form>
+    <form>
+        <label>Room Number :</label>
+        <input type="number" class="box" placeholder="Room Number">
+    </form>
+    <form>
+        <input class="radio" type="radio" name="gender">
+        <label>Male</label>
+        <input class="radio" type="radio" name="gender">
+        <label>Female</label>
+    </form>
+    <form>
+        <label>Select Class &nbsp; &nbsp; :</label>
+        <select class="box" id="select">
+            <option class="option" value="" disabled selected></option>
+            <option class="option" value="yoga">Yoga Class</option>
+            <option class="option" value="bracelet">Brecelet Class</option>
+            <option class="option" value="khmer-language">Khmer Language Class</option>
+        </select>
+    </form>
+    <form id="yoga" class="hidden_div">
+        <label>Class Date &nbsp; &nbsp;  &nbsp; :</label>
+        <input id="datepicker" type="text" class="box">
+    </form>
+    <form id="bracelet" class="hidden_div">
+        <label>Class Date &nbsp; &nbsp;  &nbsp; :</label>
+        <input id="datepicker2" type="text" class="box">
+    </form>
+    <form id="khmer-language" class="hidden_div">
+        <label>Class Date &nbsp; &nbsp;  &nbsp; :</label>
+        <input id="datepicker3" type="text" class="box">
+    </form>
+    <button class="submit">
+        Submit
+    </buttom>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
