@@ -13,44 +13,46 @@
 <body>
     <h1>SIGNUP FORM</h1>
     <div class="container">
-    <form>
+    <form  method="post" action="" name="contact-form">
+    <div>
         <label>Guest Name &nbsp; &nbsp; :</label>
-        <input type="text" class="box" placeholder="Enter Name">
-    </form>
-    <form>
+        <input type="text" class="box" placeholder="Enter Name" name="Guest-Name" required>
+    </div>
+    <div>
         <label>Room Number :</label>
-        <input type="number" class="box" placeholder="Room Number">
-    </form>
-    <form>
-        <input class="radio" type="radio" name="gender">
+        <input type="number" class="box" placeholder="Room Number" name="Room-Number" required>
+    </div>
+    <div>
+        <input class="radio" type="radio" value="male" name="Gender" required>
         <label>Male</label>
-        <input class="radio" type="radio" name="gender">
+        <input class="radio" type="radio" value="female" name="Gender" required>
         <label>Female</label>
-    </form>
-    <form>
+    </div>
+    <div>
         <label>Select Class &nbsp; &nbsp; :</label>
-        <select class="box" id="select">
+        <select class="box" id="select" name="Class" required>
             <option class="option" value="" disabled selected></option>
-            <option class="option" value="yoga">Yoga Class</option>
-            <option class="option" value="bracelet">Brecelet Class</option>
+            <option class="option" value="Yoga">Yoga Class</option>
+            <option class="option" value="Bracelet">Brecelet Class</option>
             <option class="option" value="khmer-language">Khmer Language Class</option>
         </select>
-    </form>
-    <form id="yoga" class="hidden_div">
+    </div>
+    <div id="Yoga" class="hidden_div">
         <label>Class Date &nbsp; &nbsp;  &nbsp; :</label>
-        <input id="datepicker" type="text" class="box">
-    </form>
-    <form id="bracelet" class="hidden_div">
+        <input id="datepicker" type="" class="box" name="Date-Class">
+    </div>
+    <div id="Bracelet" class="hidden_div">
         <label>Class Date &nbsp; &nbsp;  &nbsp; :</label>
-        <input id="datepicker2" type="text" class="box">
-    </form>
-    <form id="khmer-language" class="hidden_div">
+        <input id="datepicker2" type="" class="box" name="Date-Class">
+    </div>
+    <div id="Khmer-language" class="hidden_div">
         <label>Class Date &nbsp; &nbsp;  &nbsp; :</label>
-        <input id="datepicker3" type="text" class="box">
-    </form>
-    <button class="submit">
+        <input id="datepicker3" type="" class="box" name="Date-Class">
+    </div>
+    <button id="submit">
         Submit
     </buttom>
+</form>
 </div>
 <script src="app.js"></script>
 </body>
