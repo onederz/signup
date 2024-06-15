@@ -36,7 +36,7 @@ $(function() {
     });
   });
 
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbw48w064lJWo5x4-T2FXZxreZXyfv_2r2cyTgk8qQQNq7O3LPznHCZ584PX-MlMoZZB/exec'
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwPHcUmaGggLmWq9I4v3X1Xe0tfSvqIAlRM_HLhMEm7ncd3fBDQ9tVM99_UG_F01wcXNA/exec'
 
   const form = document.forms['contact-form']
   
