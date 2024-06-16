@@ -30,14 +30,14 @@ body {
 
 .box {
     font-size: 20px;
-    width: 100%;
+    width: 90%;
     height: 40px;
     background-color: rgba(0, 255, 255, 0);
 }
 
 .box-date {
     font-size: 20px;
-    width: 100%;
+    width: 90%;
     height: 20px;
     background-color: rgba(0, 255, 255, 0);
 }
