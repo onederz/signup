@@ -28,7 +28,7 @@ form {
     margin-bottom: 25px;
 }
 
-div {
+.padding {
     margin: 10px;
     margin-bottom: 25px;
 }
@@ -52,8 +52,21 @@ label {
 }
 
 #submit {
+    z-index: 2;
     color: white;
     font-size: 20px;
+    height: 40px;
+    width: 100px;
+    background: rgb(4, 138, 42);
+    position: absolute;
+    bottom: 5px;
+    border-radius: 10px;
+    left: 2px;
+}
+#submit2 {
+    z-index: 1;
+    color: white;
+    font-size: 15px;
     height: 40px;
     width: 100px;
     background: rgb(4, 138, 42);
@@ -76,4 +89,13 @@ select {
 .radio {
     width: 20px;
     height: 20px;
+}
+
+.hidden_div {
+    display: none;
+}
+
+.fa-spin {
+    margin-top: 10px;
+    margin-left: 10px;
 }
