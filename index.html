@@ -4,46 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Sign Up</title>
 </head>
 <body>
-    <h1>SIGN-UP FORM</h1>
+    <h1>SIGNUP FORM</h1>
     <div class="container">
     <form  method="post" action="" name="contact-form">
-    <div>
+    <div class="padding">
         <label>Guest Name &nbsp; &nbsp; :</label>
         <input type="text" class="box" placeholder="Enter Name" name="Guest-Name" required>
     </div>
-    <div>
+    <div class="padding">
         <label>Room Number :</label>
         <input type="number" class="box" placeholder="Room Number" name="Room-Number" required>
     </div>
-    <div>
+    <div class="padding">
         <input class="radio" type="radio" value="male" name="Gender" required>
         <label>Male</label>
         <input class="radio" type="radio" value="female" name="Gender" required>
         <label>Female</label>
     </div>
-    <div>
+    <div class="padding">
+        <label>Class Date &nbsp; &nbsp;  &nbsp; :</label>
+        <input id="datepicker" type="date" class="box" name="Date-Class" value="submit" >
+    </div>
+    <div class="padding">
         <label>Select Class &nbsp; &nbsp; :</label>
         <select class="box" id="select" name="Class" required>
             <option class="option" value="" disabled selected></option>
             <option class="option" value="Yoga">Yoga Class</option>
             <option class="option" value="Bracelet">Brecelet Class</option>
-            <option class="option" value="Khmer-language">Khmer Language Class</option>
+            <option class="option" value="khmer-language">Khmer Language Class</option>
         </select>
     </div>
     <div>
-        <label>Class Date &nbsp; &nbsp;  &nbsp; :</label>
-        <input type="date" class="box" name="Date-Class">
-    </div>
-    <button id="submit">
+    <button id="submit" class="hidden_div Yoga Bracelet khmer-language">
         Submit
     </buttom>
+    </div>
+    <div id="submit2" class="buttonload hidden_div Yoga Bracelet khmer-language">
+        <i class="fa fa-circle-o-notch fa-spin"></i> Loading
+    </div>
 </form>
 </div>
 <script src="app.js"></script>
